@@ -1,0 +1,97 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: hsl(0, 0%, 100%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .container {
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  input, textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: inherit;
+    resize: none;
+  }
+  
+  button {
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0b5ed7;
+  }
+  
+  #entries {
+    margin-top: 30px;
+  }
+  
+  .entry {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    border-left: 5px solid #0d6efd;
+    position: relative; /* 자식 요소(버튼, 시간)의 위치 기준 */
+    padding-bottom: 40px; /* 시간 표시를 위한 아래쪽 여백 확보 */
+  }
+  
+  .delete-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 3px 8px;
+    font-size: 12px;
+    background-color: #f8f8f8;
+    color: #555;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .delete-btn:hover {
+    background-color: #e8e8e8;
+  }
+
+  .timestamp {
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    font-size: 0.8em;
+    color: #6c757d;
+  }
+
+  .footer {
+    position: fixed; /* 화면에 위치를 고정 */
+    bottom: 15px; /* 화면 하단에서 15px 위 */
+    left: 50%; /* 왼쪽에서 50% 지점 */
+    transform: translateX(-50%); /* 자신의 너비의 50%만큼 왼쪽으로 이동하여 중앙 정렬 */
+    color: #b0b0b0; /* 옅은 회색 */
+    font-size: 0.9em;
+    text-align: center;
+  }
