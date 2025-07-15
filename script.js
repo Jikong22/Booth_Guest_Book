@@ -77,10 +77,16 @@ function createEntryElement(name, message, timestamp, index) {
 
 // 글을 삭제하는 함수
 function deleteEntry(index) {
+  const password = prompt('삭제를 위해 비밀번호를 입력하세요:');
+  if (password !== 'del') { // 비밀번호 확인
+    alert('비밀번호가 틀렸습니다.');
+    return;
+  }
+  else{
   guestBookEntries.splice(index, 1); // 배열에서 해당 인덱스의 항목 제거
   saveEntries(); // 변경사항을 localStorage에 저장
   renderEntries(); // 목록을 다시 렌더링
-}
+}}
 
 form.addEventListener('submit', function (e) {
   e.preventDefault();
