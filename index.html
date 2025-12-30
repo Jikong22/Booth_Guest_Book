@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>방명록</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Play the code! 방명록</h1>
+    <form id="guestForm">
+      <input type="text" id="name" placeholder="학번, 이름을 작성해주세요. (ex. 10900 홍길동)" required />
+      <textarea id="message" placeholder="하고싶은 말을 작성해주세요." required></textarea>
+      <button type="submit">작성하기</button>
+    </form>
+    <div id="entries"></div>
+  </div>
+
+  <footer class="footer">Made by Park Jiho</footer>
+  <audio id="bgm" src="bgm.mp3" loop autoplay hidden></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
